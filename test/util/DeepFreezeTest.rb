@@ -1,5 +1,4 @@
 require 'minitest/autorun'
-require './lib/util/DeepFreeze'
 require './test/util/FreezeObjects'
 
 class DeepFreezeTest < Minitest::Test
