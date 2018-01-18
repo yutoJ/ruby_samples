@@ -11,7 +11,7 @@ end
 
 class Reverse
   def call(words)
-    words.split(" ").map { |word| word.reverse }.join(" ")
+    words.split(" ").map(&:reverse).join(" ")
   end
 end
 
