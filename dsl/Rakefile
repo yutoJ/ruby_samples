@@ -1,0 +1,11 @@
+desc 'task for testing'
+task :hello_world do
+  puts 'hello, world'
+end
+
+namespace :my_tasks do
+  desc 'namespace task for testing'
+  task :good_world do
+    puts "What's a wonderful world!"
+  end
+end
