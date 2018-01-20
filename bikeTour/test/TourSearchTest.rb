@@ -1,3 +1,4 @@
+
 require 'minitest/autorun'
 
 class TourSearchTest < Minitest::Test
@@ -10,6 +11,6 @@ class TourSearchTest < Minitest::Test
     date = "20170101"
     rentalRequest = true
     outputs = TourService.searchTour(level, date, rentalRequest)
-    assert_equal 
+    assert_equal
   end
 end

@@ -61,3 +61,5 @@ end
 ```
  - 自転車が用意できなかった時の返し方は？
  - Mechanicはtripにbikeを詰めて返すのか？
+
+ 3. prepare trip
