@@ -62,4 +62,16 @@ end
  - 自転車が用意できなかった時の返し方は？
  - Mechanicはtripにbikeを詰めて返すのか？
 
- 3. prepare trip
+3. Schedule
+
+```puml {.code-block}
+participant "Scheduler" as scheduler
+participant "Bicycle" as bicycle
+participant "Schedule" as schedule
+
+scheduler -> bicycle: schedulable?(starting, ending)
+bicycle -> schedule: !scheduled?(self, starting - lead_days, ending)
+schedule --> bicycle
+bicycle --> scheduler
+
+```
