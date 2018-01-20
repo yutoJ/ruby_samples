@@ -75,3 +75,16 @@ schedule --> bicycle
 bicycle --> scheduler
 
 ```
+
+4. has-a
+
+```puml {.code-block}
+participant "Bicycle" as bicycle
+participant "Parts" as parts
+participant "Part" as part
+
+bicycle -> parts:spares
+parts -> part:needs_spare
+part --> parts
+parts --> bicycle
+```
